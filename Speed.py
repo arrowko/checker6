@@ -6,7 +6,7 @@ import random
 
 # === Settings ===
 
-WEBHOOK_URL = "https://discord.com/api/webhooks/1384271423983452312/jVf54QfaR_azvRD1_39kDgeCAbBXLHdlqmCmynEMCGN-ijb560sPpm-9GEnjwXuYSIY"
+WEBHOOK_URL = "https://discord.com/api/webhooks/1373286687668699187/AS1PLzkeCJNyDlP5Lrf4jqZHfWX1ie2g786lRisf19iXqg0G1loBH8Yh_CKt9YXNSoER"
 INPUT_FILE = "testsada.txt"
 BATCH_SIZE = 20
 MAX_CONCURRENT_REQUESTS = 10
