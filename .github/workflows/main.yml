@@ -21,7 +21,7 @@ jobs:
         run: python --version
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install aiohttp requests
 
 
       - name: Run script
