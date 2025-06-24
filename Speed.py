@@ -192,7 +192,7 @@ async def main_loop():
         print("🔁 Restarting in 60s...\n")
 
         await send_summary_notification(free_names, duration)
-        await asyncio.sleep(90)
+        await asyncio.sleep(105)
 
 # === Entry Point ===
 
