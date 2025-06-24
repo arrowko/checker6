@@ -125,13 +125,19 @@ async def send_discord_notification(free_names, batch_number):
 
 # === Send final summary ===
 
+import datetime  # Add this at the top of your file
+
+# === Send final summary ===
+
 async def send_summary_notification(free_names, duration):
     if not free_names or not WEBHOOK_URL:
         return
     duration_str = time.strftime("%H:%M:%S", time.gmtime(duration))
+    current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")  # Real current time
     message = (
         f"**📊 IGN Check Summary**\n"
         f"🕒 Time: `{duration_str}`\n"
+        f"📅 Date: `{current_time}`\n"
         f"🟩 Total Free: `{len(free_names)}`\n\n"
         f"**List:**\n" + "\n".join(f"- {name}" for name in free_names)
     )
