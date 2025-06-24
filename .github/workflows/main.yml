@@ -22,6 +22,8 @@ jobs:
 
       - name: Install dependencies
         run: pip install requests
+        run: pip install aihttp
+
 
       - name: Run script
         run: python Speed.py
